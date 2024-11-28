@@ -1,0 +1,341 @@
+Here are the solutions to the digital electronics and logic design labs:
+
+*Experiment 1: Characteristics and Operations of TTL Gates*
+
+_Objective:_ To study the characteristics and operations of TTL inverters, OR, AND, NOR, and NAND gates using ICs.
+
+_Materials:_
+
+- TTL ICs (7400, 7402, 7404, 7408, 7432)
+- Breadboard
+- Power supply
+- Logic probe
+- Oscilloscope (optional)
+
+_Procedure:_
+
+1. Connect the TTL ICs to the breadboard and power supply.
+2. Measure the input and output voltages using a logic probe or oscilloscope.
+3. Verify the truth tables for each gate.
+4. Measure the propagation delay for each gate.
+
+_Expected Results:_
+
+- Truth tables for each gate verified.
+- Propagation delay measured for each gate.
+
+*Experiment 2: NAND and NOR Gates as Universal Logic*
+
+_Objective:_ To study NAND and NOR gates as universal logic.
+
+_Materials:_
+
+- TTL ICs (7400, 7402)
+- Breadboard
+- Power supply
+- Logic probe
+- Oscilloscope (optional)
+
+_Procedure:_
+
+1. Connect the TTL ICs to the breadboard and power supply.
+2. Implement basic logic gates (AND, OR, NOT) using NAND and NOR gates.
+3. Verify the truth tables for each gate.
+4. Measure the propagation delay for each gate.
+
+_Expected Results:_
+
+- Truth tables for each gate verified.
+- Propagation delay measured for each gate.
+
+*Experiment 3: Demorgan's Theorem*
+
+_Objective:_ To study and prove Demorgan's Theorem.
+
+_Materials:_
+
+- TTL ICs (7400, 7402)
+- Breadboard
+- Power supply
+- Logic probe
+- Oscilloscope (optional)
+
+_Procedure:_
+
+1. Connect the TTL ICs to the breadboard and power supply.
+2. Implement the logic circuits for Demorgan's Theorem.
+3. Verify the truth tables for each circuit.
+4. Measure the propagation delay for each circuit.
+
+_Expected Results:_
+
+- Truth tables for each circuit verified.
+- Propagation delay measured for each circuit.
+
+*Experiment 4: Half and Full Adder Circuits*
+
+_Objective:_ To design half and full adder circuits using logic gates.
+
+_Materials:_
+
+- TTL ICs (7400, 7402, 7408)
+- Breadboard
+- Power supply
+- Logic probe
+- Oscilloscope (optional)
+
+_Procedure:_
+
+1. Connect the TTL ICs to the breadboard and power supply.
+2. Implement the half adder and full adder circuits using logic gates.
+3. Verify the truth tables for each circuit.
+4. Measure the propagation delay for each circuit.
+
+_Expected Results:_
+
+- Truth tables for each circuit verified.
+- Propagation delay measured for each circuit.
+
+*Experiment 5: Half and Full Subtractor Circuits*
+
+_Objective:_ To design half and full subtractor circuits using logic gates.
+
+_Materials:_
+
+- TTL ICs (7400, 7402, 7408)
+- Breadboard
+- Power supply
+- Logic probe
+- Oscilloscope (optional)
+
+_Procedure:_
+
+1. Connect the TTL ICs to the breadboard and power supply.
+2. Implement the half subtractor and full subtractor circuits using logic gates.
+3. Verify the truth tables for each circuit.
+4. Measure the propagation delay for each circuit.
+
+_Expected Results:_
+
+- Truth tables for each circuit verified.
+- Propagation delay measured for each circuit.
+
+*Experiment 6: Binary Parallel Adder*
+
+_Objective:_ To study the binary parallel adder.
+
+_Materials:_
+
+- TTL ICs (7400, 7402, 7408)
+- Breadboard
+- Power supply
+- Logic probe
+- Oscilloscope (optional)
+
+_Procedure:_
+
+1. Connect the TTL ICs to the breadboard and power supply.
+2. Implement the binary parallel adder circuit using logic gates.
+3. Verify the truth table for the circuit.
+4. Measure the propagation delay for the circuit.
+
+_Expected Results:_
+
+- Truth table for the circuit verified.
+- Propagation delay measured for the circuit.
+
+*Experiment 7: 4-Bit Magnitude Comparator*
+
+_Objective:_ To design a 4-bit magnitude comparator circuit.
+
+_Materials:_
+
+- TTL ICs (7400, 7402, 7408)
+- Breadboard
+- Power supply
+- Logic probe
+- Oscilloscope (optional)
+
+_Procedure:_
+
+1. Connect the TTL ICs to the breadboard and power supply.
+2. Implement the 4-bit magnitude comparator circuit using logic gates.
+3. Verify the truth table for the circuit.
+4. Measure
+Here is the rest of the solution:
+
+_Experiment 8: 7 Segment Decoder_
+
+_Objective:_ To study the 7 segment decoder.
+
+_Materials:_
+
+- TTL ICs (7447)
+- Breadboard
+- Power supply
+- Logic probe
+- Oscilloscope (optional)
+
+_Procedure:_
+
+1. Connect the TTL ICs to the breadboard and power supply.
+2. Implement the 7 segment decoder circuit using the 7447 IC.
+3. Verify the truth table for the circuit.
+4. Measure the propagation delay for the circuit.
+
+_Expected Results:_
+
+- Truth table for the circuit verified.
+- Propagation delay measured for the circuit.
+
+_Experiment 9: 4:16 Decoder using 3:8 Decoders_
+
+_Objective:_ To design a 4:16 decoder using 3:8 decoders.
+
+_Materials:_
+
+- TTL ICs (7447, 74138)
+- Breadboard
+- Power supply
+- Logic probe
+- Oscilloscope (optional)
+
+_Procedure:_
+
+1. Connect the TTL ICs to the breadboard and power supply.
+2. Implement the 4:16 decoder circuit using 3:8 decoders.
+3. Verify the truth table for the circuit.
+4. Measure the propagation delay for the circuit.
+
+_Expected Results:_
+
+- Truth table for the circuit verified.
+- Propagation delay measured for the circuit.
+
+_Experiment 10: 16:1 Multiplexer using 4:1 Multiplexers_
+
+_Objective:_ To design a 16:1 multiplexer using 4:1 multiplexers.
+
+_Materials:_
+
+- TTL ICs (74151, 74153)
+- Breadboard
+- Power supply
+- Logic probe
+- Oscilloscope (optional)
+
+_Procedure:_
+
+1. Connect the TTL ICs to the breadboard and power supply.
+2. Implement the 16:1 multiplexer circuit using 4:1 multiplexers.
+3. Verify the truth table for the circuit.
+4. Measure the propagation delay for the circuit.
+
+_Expected Results:_
+
+- Truth table for the circuit verified.
+- Propagation delay measured for the circuit.
+
+_Experiment 11: Flip-Flops_
+
+_Objective:_ To study the characteristics and operations of flip-flops.
+
+_Materials:_
+
+- TTL ICs (7473, 7474)
+- Breadboard
+- Power supply
+- Logic probe
+- Oscilloscope (optional)
+
+_Procedure:_
+
+1. Connect the TTL ICs to the breadboard and power supply.
+2. Implement the flip-flop circuits using the 7473 and 7474 ICs.
+3. Verify the truth tables for each circuit.
+4. Measure the propagation delay for each circuit.
+
+_Expected Results:_
+
+- Truth tables for each circuit verified.
+- Propagation delay measured for each circuit.
+
+_Experiment 12: Counters_
+
+_Objective:_ To design and implement counters using flip-flops.
+
+_Materials:_
+
+- TTL ICs (7473, 7474)
+- Breadboard
+- Power supply
+- Logic probe
+- Oscilloscope (optional)
+
+_Procedure:_
+
+1. Connect the TTL ICs to the breadboard and power supply.
+2. Implement the counter circuits using flip-flops.
+3. Verify the truth tables for each circuit.
+4. Measure the propagation delay for each circuit.
+
+_Expected Results:_
+
+- Truth tables for each circuit verified.
+- Propagation delay measured for each circuit.
+
+_Experiment 13: Binary to Gray Code Converter_
+
+_Objective:_ To design and implement a binary to Gray code converter.
+
+_Materials:_
+
+- TTL ICs (7486)
+- Breadboard
+- Power supply
+- Logic probe
+- Oscilloscope (optional)
+
+_Procedure:_
+
+1. Connect the TTL ICs to the breadboard and power supply.
+2. Implement the binary to Gray code converter circuit using the 7486 IC.
+3. Verify the truth table for the circuit.
+4. Measure the propagation delay for the circuit.
+
+_Expected Results:_
+
+- Truth table for the circuit verified.
+- Propagation delay measured for the circuit.
+
+_Experiment 14: Up-Down Counter_
+
+_Objective:_ To design and implement an up-down counter.
+
+_Materials:_
+
+- TTL ICs (7490, 7492)
+- Breadboard
+- Power supply
+- Logic probe
+- Oscilloscope (optional)
+
+_Procedure:_
+
+1. Connect the TTL ICs to the breadboard and power supply.
+2. Implement the up-down counter circuit using the 7490 and 7492 ICs.
+3. Verify the truth table for the circuit.
+4. Measure the propagation delay for the circuit.
+
+_Expected Results:_
+
+- Truth table for the circuit verified.
+- Propagation delay measured for the circuit.
+
+_Experiment 15: Programmable Shift Registers_
+
+_Objective:_ To study the characteristics and operations of programmable shift registers.
+
+_Materials:_
+
+- TTL IC

@@ -1,0 +1,155 @@
+Here are the solutions to the RDBMS experiments:
+
+*Experiment 1: Machine Allotments*
+
+_Query:_
+```
+SELECT * FROM machine_allotments;
+```
+_Expected Output:_
+A list of machine allotments with student names, lab numbers, and machine numbers.
+
+*Experiment 2: Total Lab Allotments Day-Wise*
+
+_Query:_
+```
+SELECT DAY_OF_WEEK, COUNT(*) AS total_allotments
+FROM machine_allotments
+GROUP BY DAY_OF_WEEK;
+```
+_Expected Output:_
+A list of total lab allotments for each day of the week.
+
+*Experiment 3: Machine Allocation Count for 'CSIT' Class*
+
+_Query:_
+```
+SELECT COUNT(*) AS machine_count
+FROM machine_allotments
+WHERE class_name = 'CSIT';
+```
+_Expected Output:_
+The total number of machines allocated to the 'CSIT' class.
+
+*Experiment 4: Machine Allotment Details for Student 5*
+
+_Query:_
+```
+SELECT ma.stud_no, ma.stud_name, ma.mach_no, ma.lab_no, ma.day_of_week,
+       s.class_name, s.section
+FROM machine_allotments ma
+JOIN students s ON ma.stud_no = s.stud_no
+WHERE ma.stud_no = 5;
+```
+_Expected Output:_
+The machine allotment details for student 5, including their personal and class details.
+
+*Experiment 5: Machine Allocation Count for Lab 1 on Mondays*
+
+_Query:_
+```
+SELECT COUNT(*) AS machine_count
+FROM machine_allotments
+WHERE lab_no = 1 AND DAY_OF_WEEK = 'Monday';
+```
+_Expected Output:_
+The total number of machines allocated in Lab 1 on Mondays.
+
+*Experiment 6: Student Count Class-Wise with Machine Allotments*
+
+_Query:_
+```
+SELECT s.class_name, COUNT(*) AS student_count
+FROM machine_allotments ma
+JOIN students s ON ma.stud_no = s.stud_no
+GROUP BY s.class_name;
+```
+_Expected Output:_
+A list of student counts for each class with machine allotments.
+
+*Experiment 7: View for Machine Allotment Details*
+
+_Query:_
+```
+CREATE VIEW machine_allotment_details AS
+SELECT ma.stud_no, ma.stud_name, ma.mach_no, ma.lab_no, ma.day_of_week
+FROM machine_allotments ma;
+```
+_Expected Output:_
+A view that lists the machine allotment details for each student.
+
+*Experiment 8: View for Machine Allotment Details on Thursdays*
+
+_Query:_
+```
+CREATE VIEW thursday_machine_allotments AS
+SELECT ma.stud_no, ma.stud_name, ma.mach_no, ma.lab_no
+FROM machine_allotments ma
+WHERE ma.day_of_week = 'Thursday';
+```
+_Expected Output:_
+A view that lists the machine allotment details for each student on Thursdays.
+
+*Experiment 9: Subprogram to Find Largest Number*
+
+_Query:_
+```
+CREATE OR REPLACE FUNCTION find_largest(a NUMBER, b NUMBER, c NUMBER)
+RETURN NUMBER IS
+BEGIN
+  IF a > b AND a > c THEN
+    RETURN a;
+  ELSIF b > a AND b > c THEN
+    RETURN b;
+  ELSE
+    RETURN c;
+  END IF;
+END;
+/
+```
+_Expected Output:_
+A subprogram that returns the largest of three given numbers.
+
+*Experiment 10: Subprogram to Check Armstrong Number*
+
+_Query:_
+```
+CREATE OR REPLACE FUNCTION is_armstrong(n NUMBER)
+RETURN BOOLEAN IS
+  sum NUMBER := 0;
+  temp NUMBER := n;
+  digit NUMBER;
+BEGIN
+  WHILE temp > 0 LOOP
+    digit := MOD(temp, 10);
+    sum := sum + POWER(digit, 3);
+    temp := TRUNC(temp / 10);
+  END LOOP;
+  RETURN sum = n;
+END;
+/
+```
+_Expected Output:_
+A subprogram that checks whether a given number is an Armstrong number.
+
+*Experiment 11: Subprogram to Generate Prime Numbers*
+
+_Query:_
+```
+CREATE OR REPLACE PROCEDURE generate_primes(n NUMBER) IS
+  i NUMBER;
+  j NUMBER;
+  is_prime BOOLEAN;
+BEGIN
+  FOR i IN 2..n LOOP
+    is_prime := TRUE;
+    FOR j IN 2..SQRT(i) LOOP
+      IF MOD(i, j) = 0 THEN
+        is_prime := FALSE;
+        EXIT;
+      END IF;
+    END LOOP;
+    IF is_prime THEN
+      DBMS_OUTPUT.PUT_LINE(i);
+    END
+```
